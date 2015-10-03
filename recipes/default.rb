@@ -17,6 +17,6 @@ end
 %W(mysql-client-core-5.6 mysql-client-5.6).each do |pack|
     package pack do
         action :install
-        action :run, 'execute[mysqldump]', :delayed
+        notifies :run, 'execute[mysqldump]', :delayed
     end
 end
