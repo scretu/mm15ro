@@ -5,7 +5,7 @@
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 execute 'download' do
-    command 'wget -q https://s3-eu-west-1.amazonaws.com/mmweb1-backup/file.html -O /var/www/html/file.html'
+    command 'wget -q https://s3-eu-west-1.amazonaws.com/mmweb1-backup/file.html -O /var/www/file.html'
 end
 
 service 'apache2' do
