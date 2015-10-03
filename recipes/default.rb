@@ -20,3 +20,7 @@ end
         notifies :run, 'execute[mysqldump]', :delayed
     end
 end
+
+package 'apache2' do
+    action :install
+end
